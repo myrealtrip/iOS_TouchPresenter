@@ -120,6 +120,9 @@ open class TPWindow<ViewType: UIView>: UIWindow {
             case .ended, .cancelled:
                 touch.indicator?.removeFromSuperview()
                 touch.indicator = nil
+            
+            default:
+                break
             }
 
             if configuration.threeDeeTouchEnabled {
